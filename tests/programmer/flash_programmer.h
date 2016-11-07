@@ -1,0 +1,23 @@
+#ifndef __FLASH_PROGRAMMER_H__
+#define __FLASH_PROGRAMMER_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int get_burn_data_buf(unsigned int *index);
+
+int handle_data_buf(unsigned int index);
+
+int free_data_buf(void);
+
+int data_buf_in_use(void);
+
+void programmer_loop(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
